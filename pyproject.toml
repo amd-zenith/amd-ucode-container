@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "amd-ucode-container"
+dynamic = ["version"]
+authors = [
+  { name="Antonio Vázquez Blanco", email="antoniovazquezblanco@gmail.com" },
+  { name="Kaya Erchiran" },
+]
+description = "A Python library for parsing and interpreting AMD microcode container files"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+]
+
+[project.scripts]
+amd_ucode_container_info = "amd_ucode_container.cli_info:main"
+amd_ucode_container_extract = "amd_ucode_container.cli_extract:main"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/amd_ucode_container"]
