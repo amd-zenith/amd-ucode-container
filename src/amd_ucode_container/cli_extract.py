@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# SPDX-License-Identifier: GPL-2.0-or-later
 '''
 A tool to extract AMD uCode container files.
 '''
