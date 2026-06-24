@@ -12,12 +12,21 @@ authors = [
 description = "A Python library for parsing and interpreting AMD microcode container files"
 readme = "README.md"
 requires-python = ">=3.0"
+keywords = ["amd", "microcode", "ucode", "container", "linux", "kernel"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
+    "Topic :: System :: Hardware",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
 ]
 dependencies = [
 ]
+
+[project.urls]
+Homepage = "https://github.com/amd-zenith/amd-ucode-container"
+Repository = "https://github.com/amd-zenith/amd-ucode-container"
+Issues = "https://github.com/amd-zenith/amd-ucode-container/issues"
 
 [project.scripts]
 amd_ucode_container_info = "amd_ucode_container.cli_info:main"
