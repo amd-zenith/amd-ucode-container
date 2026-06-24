@@ -52,7 +52,7 @@ def main() -> None:
     print(BANNER)
     parser = argparse.ArgumentParser(description="Extract patches from AMD uCode container files.")
     parser.add_argument("files", nargs="+", type=Path, help="AMD uCode container files to extract")
-    parser.add_argument("-o", "--output", type=Path, default=Path.cwd(), help="Firectory extract patches to")
+    parser.add_argument("-o", "--output", type=Path, default=Path.cwd(), help="Directory to extract patches to")
     args = parser.parse_args()
 
     for target in args.files:
